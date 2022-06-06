@@ -1,0 +1,123 @@
+html, body{
+    font-family: proxima-nova, sans-serif;
+    font-weight: 400;
+    font-style:normal;
+}
+
+.navbar {
+    z-index: 10001;
+}
+
+.nav-link,
+.navbar-brand,
+h1,
+#white{
+    color: #fff;
+}
+
+#white, 
+p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14pt;
+}
+
+#gif {
+    height: 400px;
+    width: 400px;
+    margin-left: 40px;
+}
+
+#skills {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 20vh;
+}
+
+.menu {
+    position: relative;
+    width: 200px;
+    height: 200px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu li {
+    position: absolute;
+    left: 0;
+    list-style: none; 
+    transform-origin: 100px;  
+    transition: 0.5s;       
+    transition-delay: calc(0.1s * var(--1));
+    transform: rotate(0deg) translateX(80px); 
+}
+
+.menu.active li {
+    transform: rotate(calc(360deg / 5 * var(--i)));
+}
+
+
+.menu li span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: #333;
+    border-radius: 50%;
+    transform: rotate(calc(360deg / -5 * var(--i)));
+    box-shadow: 0 3px 4px rgba(0,0,0,0.80);
+    transition: 0.5s;
+}
+
+.toggle {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0px 4px rgba(0,0,0,0.80);
+    font-size: 2.5em;
+    transition: 1.25s;
+}
+
+.menu.active .toggle {
+    transform: rotate(315deg);
+}
+
+.fa-solid.fa-plus{
+    color: #333;
+}
+
+.fa-brands.fa-html5{
+    color: #e54d26;
+    font-size: 2em;
+}
+
+.fa-brands.fa-bootstrap{
+    color: #563d7c;
+    font-size: 2em;
+}
+
+.fa-brands.fa-css3{
+    color: #2163af;
+    font-size: 2em;
+}
+
+.fa-brands.fa-js-square {
+    color: #fcdc00;
+    font-size: 2em;
+}
+
+.fa-brands.fa-java {
+    color: #ff1226;
+    font-size: 2em;
+}
+
